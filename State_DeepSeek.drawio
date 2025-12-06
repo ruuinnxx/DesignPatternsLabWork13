@@ -1,9 +1,65 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36" version="29.2.4">
   <diagram name="Страница-1" id="ttvZlzyg9gkv0Fqf_GEk">
-    <mxGraphModel>
+    <mxGraphModel dx="1042" dy="562" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="rMqzygmksB-7FKiTvVOa-1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" value="Idle&#xa;(Ожидание)" vertex="1">
+          <mxGeometry height="60" width="120" x="200" y="300" as="geometry" />
+        </mxCell>
+        <mxCell id="rMqzygmksB-7FKiTvVOa-2" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" value="Room Selected&#xa;(Номер выбран)" vertex="1">
+          <mxGeometry height="60" width="120" x="400" y="300" as="geometry" />
+        </mxCell>
+        <mxCell id="rMqzygmksB-7FKiTvVOa-3" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" value="Booking Confirmed&#xa;(Бронирование подтверждено)" vertex="1">
+          <mxGeometry height="60" width="120" x="600" y="300" as="geometry" />
+        </mxCell>
+        <mxCell id="rMqzygmksB-7FKiTvVOa-4" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="Paid&#xa;(Оплачено)" vertex="1">
+          <mxGeometry height="60" width="120" x="800" y="300" as="geometry" />
+        </mxCell>
+        <mxCell id="rMqzygmksB-7FKiTvVOa-5" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" value="Cancelled&#xa;(Отменено)" vertex="1">
+          <mxGeometry height="60" width="120" x="500" y="500" as="geometry" />
+        </mxCell>
+        <mxCell id="rMqzygmksB-7FKiTvVOa-6" parent="1" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#000000;" value="" vertex="1">
+          <mxGeometry height="40" width="40" x="840" y="430" as="geometry" />
+        </mxCell>
+        <mxCell id="rMqzygmksB-7FKiTvVOa-7" parent="1" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" value="" vertex="1">
+          <mxGeometry height="30" width="30" x="170" y="315" as="geometry" />
+        </mxCell>
+        <mxCell id="rMqzygmksB-7FKiTvVOa-8" edge="1" parent="1" source="rMqzygmksB-7FKiTvVOa-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" target="rMqzygmksB-7FKiTvVOa-1" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rMqzygmksB-7FKiTvVOa-9" edge="1" parent="1" source="rMqzygmksB-7FKiTvVOa-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="rMqzygmksB-7FKiTvVOa-2" value="Выбор номера&#xa;(selectRoom)">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rMqzygmksB-7FKiTvVOa-10" edge="1" parent="1" source="rMqzygmksB-7FKiTvVOa-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="rMqzygmksB-7FKiTvVOa-3" value="Подтверждение бронирования&#xa;(confirmBooking)">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rMqzygmksB-7FKiTvVOa-11" edge="1" parent="1" source="rMqzygmksB-7FKiTvVOa-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="rMqzygmksB-7FKiTvVOa-4" value="Оплата&#xa;(processPayment)">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rMqzygmksB-7FKiTvVOa-12" edge="1" parent="1" source="rMqzygmksB-7FKiTvVOa-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="rMqzygmksB-7FKiTvVOa-6" value="Завершение бронирования">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rMqzygmksB-7FKiTvVOa-13" edge="1" parent="1" source="rMqzygmksB-7FKiTvVOa-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" target="rMqzygmksB-7FKiTvVOa-5" value="Отмена бронирования&#xa;(cancelBooking)">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rMqzygmksB-7FKiTvVOa-14" edge="1" parent="1" source="rMqzygmksB-7FKiTvVOa-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" target="rMqzygmksB-7FKiTvVOa-5" value="Отмена бронирования&#xa;(cancelBooking)">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rMqzygmksB-7FKiTvVOa-15" edge="1" parent="1" source="rMqzygmksB-7FKiTvVOa-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="rMqzygmksB-7FKiTvVOa-1" value="Новое бронирование">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rMqzygmksB-7FKiTvVOa-16" edge="1" parent="1" source="rMqzygmksB-7FKiTvVOa-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="rMqzygmksB-7FKiTvVOa-6" value="Выход из системы">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="560" y="560" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rMqzygmksB-7FKiTvVOa-17" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;" value="• Пользователь может отменить бронирование на любом этапе до оплаты&#xa;• Если бронирование не оплачено, оно не может быть завершено&#xa;• После успешной оплаты бронирование завершается" vertex="1">
+          <mxGeometry height="100" width="300" x="50" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="rMqzygmksB-7FKiTvVOa-18" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;fontStyle=1;" value="Диаграмма состояний системы бронирования номеров в гостинице" vertex="1">
+          <mxGeometry height="30" width="400" x="200" y="50" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
